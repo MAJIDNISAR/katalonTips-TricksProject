@@ -28,11 +28,11 @@ import internal.GlobalVariable as GlobalVariable
  * 
  * @params
  */
-
 WebUI.callTestCase(findTestCase('Advance Examples/Pages/Login Page/The Login page is loaded successfully'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Advance Examples/Pages/Login Page/Login with username and encrypted password'), [('username') : GlobalVariable.username
         , ('encryptedPassword') : GlobalVariable.encrypted_password], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Advance Examples/Pages/Dashboard Page/The Dashboard Page is loaded successfully'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Advance Examples/Pages/Dashboard Page/The Dashboard Page is loaded successfully'), [:], 
+    FailureHandling.STOP_ON_FAILURE)
 
